@@ -1,0 +1,168 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+section {
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dontBoo h1 { 
+  font-size: 4.7rem; 
+  font-family: "Abril Fatface", serif; 
+  text-align: center; 
+  margin: 1rem 0 2.5rem;
+  line-height: 4.7rem; 
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-family: "Playfair Display";
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: "Open Sans", serif;
+  line-height: 1.8rem;
+  padding: 0.4rem 0 1rem;
+}
+
+.intro img {
+  float: left;
+  width: 50%;
+  padding: 1rem;
+
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
+}
+
+.intro div {
+  float: left;
+  width: 50%;
+  padding: 1rem;
+}
+
+.dontBoo {
+  background: #eee;
+  clear: both;
+  max-width: 900px;
+  padding: 0.5rem;
+  margin: 3rem auto;
+}
+
+.dontBoo p {
+  font-size: 1.5rem;
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+
+hr {
+  border: 1px dashed #eee;
+  max-width: 800px;
+}
+
+.charity:after, .intro:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.charity {
+  margin-bottom: 2.5rem;
+}
+
+.cause, .info {
+  float: left;
+  padding: 1rem;
+}
+
+.cause { width: 30%; }
+.info { width: 70%; }
+
+.donate { 
+  background: #c00; 
+  color: white; 
+  padding: 0.8rem; 
+  text-decoration: none; 
+  float: right; 
+  position: relative; 
+  font-family: "Open Sans";
+}
+
+.donate:hover { background: #ad0000; }
+
+.donate:after {
+  content: "\1F44F";
+  position: absolute;
+  left: 10px;
+  margin-top: -6px;
+  transform: translateX(0);
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  transition: 0.2s all;
+  font-size: 1.5rem;
+}
+
+.donate:hover:after {
+  transform: translateX(-45px);
+  opacity: 1;
+}
+
+.about {
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.about p {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  margin: 0 0.5rem;
+}
+
+
+@media (max-width: 700px) {
+  section {  }
+  .intro img { float: none; }
+  .intro div { float: none; width: 100%; }
+  .charity { text-align: center; }
+  .cause { width: 100%; float: none; margin-bottom: 0; }
+  h3 {  }
+  .info { width: 100%; float: none; padding-top: 0; }
+  .description { margin-top: 0; margin-bottom: 1.5rem; }
+  .donate { float: none; }
+}
+
+@media (max-width: 500px) {
+  .dontBoo { width: 100%; }
+  .dontBoo p { font-size: 1.2rem }
+  .dontBoo h1 { font-size: 3.4rem; line-height: 3.4rem;}
+}
+
+
+body.terms {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+li {
+  font-family: "Open Sans", sans-serif;
+  margin: 1rem 0;
+}
